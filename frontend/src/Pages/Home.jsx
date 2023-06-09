@@ -9,11 +9,11 @@ export default function App() {
 let books=[
   {
     "id":1,
-    "author": "Chinua Achebe",
+    "author": "Arundhati Roy",
     "imageLink": "images/things-fall-apart.jpg",
     "link": "https://en.wikipedia.org/wiki/Things_Fall_Apart\n",
     "pages": 209,
-    "title": "Things Fall Apart",
+    "title": "The God of Small Things",
     "price": 1958
   },
   {
@@ -150,8 +150,8 @@ let books=[
 
   return (
     <div>
-      <Container>
-     <u><h1 className='d-flex justify-content-center mt-3'>BOOK STATION</h1></u> 
+    <Container> 
+     <h1 className='d-flex justify-content-center mt-3'>BOOKS STATION</h1> 
       <Row>
       <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -165,7 +165,7 @@ let books=[
         <Card.Body>
           <Card.Title className='he1'>{book.title}</Card.Title>
           <Card.Text style={{height :'20 rem'}}>
-            {book.author}
+            {book.author} <br />
             {book.price}
             </Card.Text>
           <Button variant="primary">Buy</Button>
@@ -174,7 +174,7 @@ let books=[
     </Col>
   ))}
 </Row>
-      </Container>
+    </Container>
 
     </div>
   )
