@@ -235,9 +235,7 @@ let books=[
     "title": "Lolita",
     "year": 1955
   }
-
-
-  
+ 
 ]
 
   return (
@@ -260,7 +258,7 @@ let books=[
             {book.author} <br/>
             Rs.{book.price}
             </Card.Text>
-          <Button variant="primary">Add to cart</Button>
+          <Button variant="primary" href='/product'>View</Button>
         </Card.Body>
       </Card>
     </Col>

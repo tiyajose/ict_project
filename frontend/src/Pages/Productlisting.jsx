@@ -11,17 +11,16 @@ export default function Product() {
       <Container>
 
         <div >
-          <h6>Home/Things Fall Apart</h6>
-          <hr />
+        
           <div className='text-center mt-5'>
             <h1 >Things Fall Apart </h1>
             <label htmlFor="">By :</label>
-            <a href="https://en.wikipedia.org/wiki/Chinua_Achebe">Chinua Achebe</a>
+            <a href="https://en.wikipedia.org/wiki/Chinua_Achebe" >Chinua Achebe</a>
           </div>
           <hr />
           <div className='split-screen align-center'>
             <div className='split-screen__half'>
-              <img src="images/things-fall-apart.jpg" alt="" width="300" height="400" />
+              <img src="https://i0.wp.com/www.raptisrarebooks.com/images/179534/things-fall-apart-chinua-achebe-first-edition-signed-1959-rare-review.jpg?fit=1250%2C1000&ssl=1" alt="" width="300" height="400" />
             </div>
 
             {/* <div className='right '> */}
@@ -38,7 +37,7 @@ export default function Product() {
               <br /><h4>Number of pages :</h4>
               <br /><h4>Language :</h4>
               <hr />
-              <h4>Price </h4>
+              <h4>Price : Rs.209</h4>
 
             </div>
             <hr />
