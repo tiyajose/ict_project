@@ -168,7 +168,7 @@ let books=[
             {book.author} <br />
             {book.price}
             </Card.Text>
-          <Button variant="primary">Buy</Button>
+          <Button variant="primary" href='/product'>Buy</Button>
         </Card.Body>
       </Card>
     </Col>

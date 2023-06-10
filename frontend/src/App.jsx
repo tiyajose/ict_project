@@ -7,6 +7,7 @@ import Login from './Pages/Login';
 import Userdetails from './Pages/Userdetails.jsx';
 import Cart from './Pages/Cart.jsx';
 import Registration from './Pages/Registration.jsx';
+import Productlisting from './Pages/Productlisting.jsx';
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
           <Route path="/register" element={<Registration />} />
           <Route path="/profile" element={<Userdetails/>} />
           <Route path="/cart" element={<Cart/>} />
+          <Route path="/product" element={<Productlisting/>} />
 
          
 
