@@ -6,7 +6,7 @@ export default function Nav1() {
   return (
 
     <div>
-      <nav class="navbar bg-primary" data-bs-theme="dark">
+      <nav class="navbar bg-secondary" data-bs-theme="dark">
 
   <div class="container-fluid">
     <Container>

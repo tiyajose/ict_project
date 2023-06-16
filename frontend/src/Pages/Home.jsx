@@ -240,31 +240,35 @@ let books=[
 
   return (
     <div>
-    <Container> 
-    <b> <h1 className='d-flex justify-content-center mt-3'>BOOKS STATION</h1> </b>
-      <Row>
-      <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-      <button class="btn btn-outline-success" type="submit">Search</button>
+    <Container>
+  <b>
+    <h1 className='d-flex justify-content-center mt-3'>BOOKS STATION</h1>
+  </b>
+  <Row>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search for books" aria-label="Search" />
+      <button class="btn btn-outline-dark" type="submit">Search</button>
     </form>
+  </Row>
+  <Row>
+    {books.map((book, index) => (
+      <Col sm={3} key={index} className="card-pad mt-4">
+        <Card className='card-pad'>
+          <Card.Img variant="top" src={book.imageLink} style={{ height: '200px', objectFit: 'cover' }} />
+          <Card.Body className="d-flex flex-column align-items-center">
+            <Card.Title className='he1'>{book.title}</Card.Title>
+            <Card.Text style={{ height: '20 rem' }}>
+              {book.author} 
+              </Card.Text>
+              Rs.{book.price} <br /> <br />
+           <Button variant="dark" href='/product'>View</Button>
+          </Card.Body>
+        </Card>
+      </Col>
+    ))}
+  </Row>
+</Container>
 
-  {books.map((book,index) => (
-    <Col sm = {2}  key={index} className="card-pad mt-4">
-      <Card className='card-pad'>
-        <Card.Img variant="top" src={book.imageLink} style={{ height: '200px', objectFit: 'cover' }} />
-        <Card.Body>
-          <Card.Title className='he1'>{book.title}</Card.Title>
-          <Card.Text style={{height :'20 rem'}}>
-            {book.author} <br/>
-            Rs.{book.price}
-            </Card.Text>
-          <Button variant="primary" href='/product'>View</Button>
-        </Card.Body>
-      </Card>
-    </Col>
-  ))}
-</Row>
-    </Container>
 
     </div>
   )

@@ -37,6 +37,10 @@ export default function Registration() {
         <Form.Label>Address</Form.Label>
         <Form.Control placeholder="Enter Address" />
       </Form.Group>
+      <div class="mb-3">
+  <label for="formFile" class="form-label">Upload profile image</label>
+  <input class="form-control" type="file" id="formFile"/>
+</div>
     </Form>
     <Button variant="outline-primary">Create Account</Button>{' '}
     </Container>
