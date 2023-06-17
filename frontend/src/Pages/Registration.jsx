@@ -42,7 +42,7 @@ export default function Registration() {
   <input class="form-control" type="file" id="formFile"/>
 </div>
     </Form>
-    <Button variant="outline-primary">Create Account</Button>{' '}
+    <Button variant="outline-dark">Create Account</Button>{' '}
     </Container>
     </div>
   )

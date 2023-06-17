@@ -17,12 +17,12 @@ export default function Login() {
           <Form.Label>Password</Form.Label>
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
-        <Button variant="link" >Forgot Password?</Button>
+        <Button variant="link-outline-dark" >Forgot Password?</Button> <br /><br />
       </Form>
-      <Button variant="outline-primary">Login</Button>{' '}
+      <Button variant="outline-dark">Login</Button>{' '} <br /> <br />
       <div>
       <Link to="/register">
-        <Button variant="link" >Create Account</Button>
+        <Button variant="outline-dark" >Create Account</Button>
       </Link>
       </div>
       </Container>
