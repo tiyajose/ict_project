@@ -1,13 +1,20 @@
 import React from 'react'
+import { useForm } from "react-hook-form";
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
 
+
 export default function Registration() {
+  const { register, handleSubmit } = useForm();
+    const onFormSubmit  = data => console.log(data);
+    const onErrors = errors => console.error(errors);
+  
+  
   return (
     <div>
-      <Container>
+      <Container className='mt-5'>
       <Form>
       <Form.Group className="mb-3" >
         <Form.Label>First Name</Form.Label>

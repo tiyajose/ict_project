@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 export default function Login() {
   return (
     <div>
-      <Container>
+      <Container className='mt-5'>
       <Form>
         <Form.Group className="mb-3" controlId="formGroupEmail">
           <Form.Label>Email address</Form.Label>
@@ -21,6 +21,8 @@ export default function Login() {
       </Form>
       <Button variant="outline-dark">Login</Button>{' '} <br /> <br />
       <div>
+      <Button variant="link-outline-dark" >Don't have an account?</Button> <br /><br />
+
       <Link to="/register">
         <Button variant="outline-dark" >Create Account</Button>
       </Link>
