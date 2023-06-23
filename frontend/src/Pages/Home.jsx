@@ -261,8 +261,12 @@ let books=[
               {book.author} 
               </Card.Text>
               Rs.{book.price} <br /> <br />
-           <Button variant="dark" href='/product'>View</Button>
+              <Button variant="dark" href='/product'>View</Button>
+              <br />
+           <Button variant="dark" href='/cart'>Add to cart</Button>
+
           </Card.Body>
+       
         </Card>
       </Col>
     ))}
