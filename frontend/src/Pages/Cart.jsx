@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 const Cart = () => {
   const [cartItems, setCartItems] = useState([]);
 
@@ -15,7 +14,7 @@ const Cart = () => {
 
   return (
     <div>
-      <h2> Cart</h2>
+      <h2 class='mt-5'> Cart</h2>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (

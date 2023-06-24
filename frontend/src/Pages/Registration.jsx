@@ -1,63 +1,91 @@
-import React from 'react'
-import { useForm } from "react-hook-form";
+import React from 'react';
+import { useForm } from 'react-hook-form';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 
-
-
 export default function Registration() {
   const { register, handleSubmit } = useForm();
-    const onFormSubmit  = data => console.log(data);
-    const onErrors = errors => console.error(errors);
-  
-  
+
+  const onFormSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
     <div>
-      <Container className='mt-5'>
-      <Form onSubmit={handleSubmit(onFormSubmit, onErrors)}>
-      <Form.Group className="mb-3" >
-        <Form.Label type="text" name="fname" {...register('firstname',{ required: "First Name is required" })} id="">First Name</Form.Label>
-
-        <Form.Control placeholder="Enter First Name" />
-      </Form.Group>
-      <Form.Group className="mb-3" >
-        <Form.Label type="text" name="lname" {...register('lastname',{ required: "Last Name is required" })} id="" >Last Name</Form.Label>
-
-        <Form.Control placeholder="Enter Second Name" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupEmail">
-        <Form.Label type="email" name="email" {...register('email',{ required: "Email is required" })} id="">Email address</Form.Label>
-
-        <Form.Control type="email" placeholder="Enter email" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupPassword">
-        <Form.Label type="text" name="password" {...register('password',{ required: "Create strong password" })} id="">Create Password</Form.Label>
-
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupPasswordConfirm">
-        <Form.Label type="text" name="cpassword" {...register('confirmpassword',{ required: "Confirm password" })} id="">Confirm Password</Form.Label>
-
-        <Form.Control type="password" placeholder="Password" />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupNumber">
-        <Form.Label type="number" name="phone" {...register('phone',{ required: "Phone number is required" })} id="">Phone Number</Form.Label>
-
-        <Form.Control type="number" placeholder="Mobile No." />
-      </Form.Group>
-      <Form.Group className="mb-3" controlId="formGroupText">
-        <Form.Label type="text" name="address" {...register('address',{ required: "Address is required" })} id="">Address</Form.Label>
-
-        <Form.Control placeholder="Enter Address" />
-      </Form.Group>
-      <div class="mb-3">
-  <label for="formFile" class="form-label">Upload profile image</label>
-  <input class="form-control" type="file" name="image" {...register('image',{ required: "Image is required" })} id="formFile"/>
-</div>
-    </Form>
-    <Button variant="outline-dark">Create Account</Button>{' '}
-    </Container>
+      <Container className="mt-5">
+        <Form onSubmit={handleSubmit(onFormSubmit)}>
+          <Form.Group className="mb-3">
+            <Form.Label>First Name</Form.Label>
+            <Form.Control name="fname"
+              type="text"
+              placeholder="Enter First Name"
+              {...register('firstname', { required: 'First Name is required' })}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3">
+            <Form.Label>Last Name</Form.Label>
+            <Form.Control name="lname"
+              type="text"
+              placeholder="Enter Last Name"
+              {...register('lastname', { required: 'Last Name is required' })}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupEmail">
+            <Form.Label>Email address</Form.Label>
+            <Form.Control name="email"
+              type="email"
+              placeholder="Enter email"
+              {...register('email', { required: 'Email is required' })}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupPassword">
+            <Form.Label>Create Password</Form.Label>
+            <Form.Control name="password"
+              type="password"
+              placeholder="Enter Password"
+              {...register('password', { required: 'Create strong password' })}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupPasswordConfirm">
+            <Form.Label>Confirm Password</Form.Label>
+            <Form.Control name="cpassword"
+              type="password"
+              placeholder="Confirm Password"
+              {...register('confirmpassword', { required: 'Confirm password' })}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupNumber">
+            <Form.Label>Phone Number</Form.Label>
+            <Form.Control name="phone"
+              type="number"
+              placeholder="Mobile No."
+              {...register('phone', { required: 'Phone number is required' })}
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formGroupText">
+            <Form.Label>Address</Form.Label>
+            <Form.Control name="address"
+              placeholder="Enter Address"
+              {...register('address', { required: 'Address is required' })}
+            />
+          </Form.Group>
+          <div className="mb-3">
+            <label htmlFor="formFile" className="form-label">
+              Upload profile image
+            </label>
+            <input
+              className="form-control"
+              type="file"
+              {...register('image', { required: 'Image is required' })}
+              id="formFile"
+            />
+          </div>
+          <Button variant="outline-dark" type="submit">
+            Create Account
+          </Button>
+        </Form>
+      </Container>
     </div>
-  )
+  );
 }

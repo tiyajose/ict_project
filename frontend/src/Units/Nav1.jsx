@@ -1,7 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import '../style.css'
-import Container from 'react-bootstrap/esm/Container';
+import { BiHomeAlt2 } from "react-icons/bi";
+import { BsCart2 } from "react-icons/bs";
+import { AiOutlineUser } from "react-icons/ai";
+
+
 export default function Nav1() {
   return (
 
@@ -15,30 +19,39 @@ export default function Nav1() {
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <Link to="/" style={{ textDecoration: 'none' }}>
-              <div class="container-md">
-
                 <div class="container-md">
 
-                  <a class="nav-link active" aria-current="page" href="">HOME</a>
+                  <div class="container-md">
+
+                    <a class="nav-link active" aria-current="page" href="">
+                      <BiHomeAlt2 size={20} />
+
+                    </a>
+                  </div>
                 </div>
+              </Link>
+
+              <Link to="/profile" style={{ textDecoration: 'none' }}>
+                <div class="container-md">
+
+                  <a class="nav-link active" href="#">
+                    <AiOutlineUser size={20} />
+                  </a>
+                </div>
+              </Link>
+              <Link to="/cart" style={{ textDecoration: 'none' }}>
+                <div class="container-md">
+
+                  <a class="nav-link active" href="#">
+                    <BsCart2 size={20} />
+                  </a>
+
                 </div>
               </Link>
               <Link to="/login" style={{ textDecoration: 'none' }}>
                 <div class="container-md">
 
                   <a class="nav-link active" href="#">LOGIN</a> </div>
-              </Link>
-              <Link to="/profile" style={{ textDecoration: 'none' }}>
-                <div class="container-md">
-
-                  <a class="nav-link active" href="#">PROFILE</a>
-                </div>
-              </Link>
-              <Link to="/cart" style={{ textDecoration: 'none' }}>
-                <div class="container-md">
-
-                  <a class="nav-link active" href="#">CART</a>
-                </div>
               </Link>
             </div>
           </div>
