@@ -9,7 +9,7 @@ export default function EditButton() {
             <MDBCard>
               <div className="rounded-top text-white d-flex flex-row" style={{ backgroundColor: '#000', height: '200px' }}>
                 <div className="ms-4 mt-5 d-flex flex-column" style={{ width: '150px' }}>
-                  <MDBCardImage src=" "
+                  <MDBCardImage src=" https://media.istockphoto.com/id/1337144146/vector/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=BIbFwuv7FxTWvh5S3vB6bkT0Qv8Vn8N5Ffseq84ClGI="
                     alt="Generic placeholder image" className="mt-4 mb-2 img-thumbnail" fluid style={{ width: '150px', zIndex: '1' }} />
                   
                 </div>

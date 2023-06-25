@@ -12,7 +12,7 @@ export default function Nav1() {
     <div>
       <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">BOOKS-STATION</a>
+          <a class="navbar-brand" href="">BOOKS-STATION</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -25,7 +25,6 @@ export default function Nav1() {
 
                     <a class="nav-link active" aria-current="page" href="">
                       <BiHomeAlt2 size={20} />
-
                     </a>
                   </div>
                 </div>
@@ -33,7 +32,6 @@ export default function Nav1() {
 
               <Link to="/profile" style={{ textDecoration: 'none' }}>
                 <div class="container-md">
-
                   <a class="nav-link active" href="#">
                     <AiOutlineUser size={20} />
                   </a>
@@ -50,7 +48,6 @@ export default function Nav1() {
               </Link>
               <Link to="/login" style={{ textDecoration: 'none' }}>
                 <div class="container-md">
-
                   <a class="nav-link active" href="#">LOGIN</a> </div>
               </Link>
             </div>

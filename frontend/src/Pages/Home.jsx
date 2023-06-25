@@ -243,13 +243,16 @@ let books=[
     <Container>
   <b>
     <h1 className='d-flex justify-content-center mt-5'>BOOKS STATION</h1>
+    <h6 className='d-flex justify-content-center mt-3'>Your Gateway to Infinite Imagination!</h6>
   </b>
+  <br /> <br />
   <Row>
     <form class="d-flex" role="search">
       <input class="form-control me-2" type="search" placeholder="Search for books" aria-label="Search" />
       <button class="btn btn-outline-dark" type="submit">Search</button>
-    </form>
+    </form>   
   </Row>
+  <br /> 
   <Row>
     {books.map((book, index) => (
       <Col sm={3} key={index} className="card-pad mt-4">
